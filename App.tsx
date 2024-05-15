@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
     fontFamily: 'arial',
     fontSize: 30,
     marginTop: '50%',
-    marginBottom: '0%',
   },
 });
 

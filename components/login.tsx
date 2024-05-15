@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { View, TextInput, Text, Button, StyleSheet } from 'react-native';
-import { Inter_700Bold } from "@expo-google-fonts/inter";
 
 interface LoginProps {
   onSubmit: (email: string, password: string) => void;
