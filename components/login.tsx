@@ -15,6 +15,7 @@ const Login: React.FC<LoginProps> = ({ onSubmit }) => {
 
   return (
     <View style={styles.container}>
+      <Text style={styles.text}>Bem vindo de volta!</Text>
       <TextInput
         style={styles.input}
         placeholder="E-mail"
@@ -39,6 +40,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  text: {
+    color: '#fff',
+    fontFamily: 'arial',
+    fontSize: 30,
+    marginTop: '50%',
   },
   input: {
     width: '80%',

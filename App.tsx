@@ -11,7 +11,6 @@ const App: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <h1 style={styles.h1}>Bem vindo de volta!</h1>
       <Login onSubmit={handleLogin} />
     </View>
   );
@@ -23,12 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  h1: {
-    color: '#fff',
-    fontFamily: 'arial',
-    fontSize: 30,
-    marginTop: '50%',
   },
 });
 
