@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { View, TextInput, Button, StyleSheet } from 'react-native';
+import { View, TextInput, Text, Button, StyleSheet } from 'react-native';
+import { Inter_700Bold } from "@expo-google-fonts/inter";
 
 interface LoginProps {
   onSubmit: (email: string, password: string) => void;
@@ -17,13 +18,13 @@ const Login: React.FC<LoginProps> = ({ onSubmit }) => {
     <View style={styles.container}>
       <TextInput
         style={styles.input}
-        placeholder="Email"
+        placeholder="E-mail"
         value={email}
         onChangeText={setEmail}
       />
       <TextInput
         style={styles.input}
-        placeholder="Password"
+        placeholder="Senha"
         secureTextEntry
         value={password}
         onChangeText={setPassword}
@@ -35,6 +36,7 @@ const Login: React.FC<LoginProps> = ({ onSubmit }) => {
 
 const styles = StyleSheet.create({
   container: {
+    width: '100%',
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -45,7 +47,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 8,
     borderWidth: 1,
-    borderColor: '#ccc',
+    borderColor: '#000',
+    backgroundColor: '#fff',
+    borderRadius: 5,
+  },
+  button: {
+    width: '80%',
+    backgroundColor: '#fff',
     borderRadius: 5,
   },
 });
